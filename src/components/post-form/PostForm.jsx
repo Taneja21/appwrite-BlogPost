@@ -19,8 +19,7 @@ function PostForm({ post }) {
   const navigate = useNavigate();
   const [error, SetError] = useState("");
   const userData = useSelector((state) => state.auth.userData);
-  console.log("User Data from Store is ::", userData);
-
+  
   const submit = async (data) => {
     if (post) {
       const file = data.image[0]
